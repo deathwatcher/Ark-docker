@@ -1,6 +1,6 @@
 FROM ubuntu:14.04
 
-MAINTAINER TuRzAm
+MAINTAINER Deathwatcher
 
 # Var for first config
 # Server Name
@@ -63,7 +63,7 @@ RUN mkdir  /ark
 
 
 # We use the git method, because api github has a limit ;)
-RUN  git clone https://github.com/FezVrasta/ark-server-tools.git /home/steam/ark-server-tools
+RUN  git clone https://github.com/Deathwatcher/ark-server-tools.git /home/steam/ark-server-tools
 WORKDIR /home/steam/ark-server-tools/
 RUN  git checkout $GIT_TAG 
 # Install 
